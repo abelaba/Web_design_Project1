@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-center{
+    margin-left: 3%;
+    margin-right: 10%;
+}
+.rounded{
+    
+    width: 6rem;
+    height: 6rem;
+}
+.nav-link{
+
+    font-size: x-large;
+}
+
+.Donate{
+    border: solid 1px  rgb(11, 202, 84) ;
+    padding: 8px 10px;
+    margin-left: 44%;
+    
+    font-size: large;
+    background-color: rgb(11, 202, 84);
+
+}
+.Donate:hover{
+    border: solid 1px rgb(13, 245, 102) ;
+    background-color:rgb(13, 245, 102);
+}
+.nav-link{
+    font-weight: 500;
+
+}
+.container-fluid{
+    background-color:#f5f3f3;
+}
+.a{
+    background: rgb(114, 179, 231);
+    border-radius: 100%;
+    padding-top: 20px; 
+    height: 80px;
+    width:80px;
+    font-size: xx-large;
+   
+}
+.b{
+   
+    background: rgba(143, 211, 157, 1);
+    border-radius: 100%;
+    padding-top: 20px; 
+    height: 80px;
+    width:80px;
+    font-size: xx-large;
+   
+}
+.c{
+   
+    background: rgb(175, 221, 90);
+    border-radius: 100%;
+    padding-top: 20px; 
+    height: 80px;
+    width:80px;
+    font-size: xx-large;
+   
+}
+.Facebook{
+    border: solid 1px #395b98 ;
+    border-radius: 2px;
+    background-color:#395b98 ;
+}
+.Twitter{
+    border: solid 1px #1ba5e2;
+    border-radius: 2px;
+    background-color:#1ba5e2 ;
+}
+.Gmail{
+    border: solid 1px red;
+    border-radius: 2px;
+    background-color:red ;
+}
+.center{
+    margin-left: 44%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
