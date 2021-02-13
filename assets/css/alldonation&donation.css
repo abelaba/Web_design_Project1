@@ -1,0 +1,114 @@
+body{
+    font-family: 'Arial','Helvetica',sans-serif;
+    line-height: 28px;
+    background-color:seashell;
+    
+  
+}
+
+img{
+    max-height: 450px !important;
+}
+
+.search{
+    padding-right: 50px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 100%;
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    
+    border-bottom: 1px solid black;
+    border-radius: none !important;
+    outline: none;
+    
+
+}
+.search-bar:focus-within{
+    
+    max-width: 100%;
+    border: none;
+    background-color: transparent;
+   
+    outline: none;
+    border-bottom: 1px solid black;
+    
+    border-radius: none !important;
+
+}
+
+
+
+
+.progress-bar{                   /* donation.html*/
+    background-color: teal;
+    
+
+}
+
+.progress{
+    max-height: 5px;
+    background-color: white;
+
+}
+
+.inner-left{
+    background-color: rgb(238, 235, 235);
+}
+
+
+
+.donate-button {                /* donation.html*/
+    transition: box-shadow .3s;
+    font-size: 70px;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    
+
+}
+
+.donate-button:hover{           /* donation.html*/
+    
+    color: white;
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+
+}
+
+
+
+.money-count{                   /* donation.html*/
+
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+.card-body{                          /* alldonations.html*/
+    
+}
+
+.card-title{                     /* alldonations.html*/
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.view-button{                        /* alldonation.html*/
+    font-size: 30px;
+    width: 30rem;
+    max-width: 100%;
+}
+
+
+
+.card:hover{
+    background-color:rgb(238, 235, 235) !important
+}
