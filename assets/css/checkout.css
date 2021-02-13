@@ -1,0 +1,66 @@
+
+
+
+#city{
+    width :200px;
+  }
+  
+  #zip{
+    width:100px;
+  }
+  
+  
+  
+  .buy{
+    background-color: white;
+    max-width: 800px;
+    border-radius: 12px;
+  
+  
+  }
+  .donationinput{
+    width: 500px;
+    margin-left: 10px;
+    height: 50px;
+    font-size:30px;
+    font-weight: normal;
+  
+  }
+  
+  .singleInput input{
+    width : 20rem;
+    margin-left: 10px;
+  }
+  
+  .singleInput{
+   margin-top:10px;
+  }
+  
+  
+  
+  .cvv-expiry input{
+    width:150px;
+  }
+  
+  .content label{
+    margin-left: 16px;
+  }
+  
+  .accept-button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-transform: uppercase;
+    width: 300px;
+    height: 50px;
+  }
+  
+  .agree p{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  body {
+      background-color: rgb(14, 58, 0);
+  }
