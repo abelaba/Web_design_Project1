@@ -33,3 +33,34 @@ function loadGlobalEmail() {
         
     }
 };
+
+submitbutton.addEventListener('click',submit);
+
+function submit(e){
+    e.preventDefault();
+
+    if(sessionStorage.getItem("globalEmail")!=null){
+        let x=0;
+
+        donationdatabase.collection('donationinfo').add({
+            title:title.value,
+            goal:goal.value,
+            accumulated:x,
+            message:message.value,
+            mylocation:mylocation.value,
+            category:category.value,
+            email:loadGlobalEmail()
+                
+        });
+        location.href="./Mydonations.html";
+        console.log("Submitted");
+
+    }
+    else{
+        console.log("No email");
+    }
+        
+
+}
+    
+    
