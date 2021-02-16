@@ -119,3 +119,24 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     
 });
+
+
+
+saveChangesButton.onclick = function(){
+
+    if(globalEmail == sessionStorage.getItem("globalEmail")){
+        key = sessionStorage.getItem("key")
+        console.log("Saved",key);
+        donationdatabase.collection('donationinfo').doc(key).update({
+            title: mytitle.value,
+            category: category.value,
+            goal: goal.value,
+            message: message.value, 
+            mylocation: mylocation.value
+            
+          })
+       
+    }
+
+    
+}
