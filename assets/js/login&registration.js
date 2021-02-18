@@ -49,3 +49,27 @@ function signup(){
     }
         
 }
+
+function login() {
+
+    console.log("qq");
+    count = 0;
+
+    userInfoDatabase.collection('users').get().then(users => {
+
+        users.forEach(element => {
+            if(element.email === emailL.value.trim().toLowerCase() && element.password === passwordL.value.trim() ){
+                console.log("Logged In");
+                sessionStorage.setItem('globalEmail',emailL.value)
+                location.href = "./index.html";
+                
+            }else{count +=1}    
+        });
+
+        if(count==users.length){
+            console.log("Email or password incorrect");
+        }
+        
+      })
+   
+}
