@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded',()=>{
     
 });
 
+if(email!=null){signupbutton.addEventListener('click',signup);}
+else if (emailL!=null) {loginButton.addEventListener('click',login);} 
+
 function signup(){
 
     if (emails.includes(email.value)){
@@ -46,6 +49,3 @@ function signup(){
     }
         
 }
-
-if(email!=null){signupbutton.addEventListener('click',signup);}
-else if (emailL!=null) {loginButton.addEventListener('click',login);} 
