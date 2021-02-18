@@ -28,5 +28,24 @@ document.addEventListener('DOMContentLoaded',()=>{
     
 });
 
+function signup(){
+
+    if (emails.includes(email.value)){
+        alert ("Email already used");
+
+    }else{
+        userInfoDatabase.collection('users').add({
+            firstname: fname.value,
+            lname: lname.value,
+            email:email.value,
+            password:pword.value
+          },email.value);
+
+          sessionStorage.setItem('globalEmail',email.value)
+          location.href = "./index.html";
+    }
+        
+}
+
 if(email!=null){signupbutton.addEventListener('click',signup);}
 else if (emailL!=null) {loginButton.addEventListener('click',login);} 
