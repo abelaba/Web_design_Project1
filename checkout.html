@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
   </head>
   <body>
 
@@ -32,57 +34,52 @@
                 <div class="row">
 
 
-                  <div class="col-md-6">
+                  <div class="col-md">
 
                     <p class="mx-4 font-weight-bold">Payment Details</p>
 
 
                     <div class="singleInput form-group">
                        <label for="name">Name on card </label>
-                        <input type="text" name="name" class="form-control" pattern="[A-Z,a-z]{2,}" required>
+                        <input type="text" name="name" class="form-control name" pattern="[A-Z,a-z]{2,}" required>
                       </div>
                       <div class="singleInput form-group">
                         <label for="card">Card Number </label>
-                        <input type="text" name="card" class="form-control" pattern="^[0-9].{15,}" placeholder="1234 5678 1234 3456" required>
+                        <input type="text" name="card" class="form-control card" pattern="^[0-9].{15,}" placeholder="1234 5678 1234 3456" required>
                       </div>
                       <div class="d-flex cvv-expiry">
                         <div class="singleInput form-group">
                           <label for="expiry">Expiry</label>
-                          <input type="text" name="expiry" class="form-control" placeholder="09/2022" required>
+                          <input type="text" name="expiry" class="form-control expiry" placeholder="09/2022" required>
                         </div>
 
                         <div class="singleInput form-group">
                           <label for="cvv">CVV </label>
-                          <input type="text" name="cvv" class="form-control" pattern="[0-9]{3}" placeholder="123" required>
+                          <input type="text" name="cvv" class="form-control cvv" pattern="[0-9]{3}" placeholder="123" required>
                         </div>
 
                       </div>
 
 
                   </div>
-                  <div class="col-md-6">
-                    <p class="mx-4 font-weight-bold">Info</p>
-                    <div class="singleInput form-group">
-                       <label for="street">Email address: </label>
-                        <input type="email" name="street" class="form-control" required="required">
-                      </div>
-                      <div class="singleInput form-group">
-                        <label for="state">Phone number</label>
-                        <input type="text" name="state" class="form-control" placeholder="0938480865" pattern="^[0-9].{10,} required="required">
-                      </div>
-
-                      
-
-                      </div>
-
-
+               
 
                   </div>
 
                 </div>
 
-                <div class="row d-flex">
-                  <button class="accept-button btn btn-primary" type="button" name="button">Make a donation!</button>
+                <div class="row d-flex submitter">
+                 
+                  <main>
+                    <div class="button">
+                      <div class="text">Submit</div>
+                    </div>
+                    <div class="progress-bar"></div>
+                    <svg x="0px" y="0px"
+                     viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                      <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                    </svg>
+                  </main>
 
                 </div>
 
@@ -109,6 +106,11 @@
 
     </div>
 
+    <script src="ASSETS/JS/localbase.js"></script>
+    <script src="assets/JS/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <script src="assets/JS/button.js"></script>
 
 
   </body>
