@@ -1,39 +1,53 @@
 body {
-    color: black;
-    margin: 0;
-    padding: 0;
-    font-family: "proxima-nova", sans-serif;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "proxima-nova", sans-serif;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-  .header-area .container-fluid .navbar .navbar-brand {
-    padding: 0 1px 0 15px;
-  }
-  
-  .header-area .container-fluid .navbar {
-    padding: 35px 0px;
-  }
-  
-  .header-area .container-fluid .nav-item .nav-link {
-    font-family: var(--roboto);
-    color: var(--title-color);
-    font-weight: 100;
-    padding: 10px 25px;
-  }
-  
-  .header-area .container-fluid .nav-item-special .nav-link {
-    font-family: var(--roboto);
-    color: var(--title-color);
-    font-weight: 100;
-    padding: 10px 25px;
-    outline-color: orange;
-    outline-style: double;
-    outline-width: thin;
-  }
 
-  .header-area .container-fluid .navbar-nav a:hover {
-    color: white;
-    background: darkgoldenrod;
-  }
+.header-area{
+  background: transparent;
+}
+.header-area  .navbar {
+  padding: 20px 0px;
+}
+
+.header-area  .nav-item .nav-link {
+  font-family: var(--roboto);
+  color: var(--title-color);
+  font-weight: 100;
+  padding: 10px 25px;
+}
+
+.header-area  .nav-item-special .nav-link {
+  font-family: var(--roboto);
+  color: var(--title-color);
+  font-weight: 300;
+  padding: 10px 25px;
+  outline-color: orange;
+  outline-style: double;
+  outline-width: thin;
+}
+.navbar-brand{
+  margin-left: 5%;
+}
+.navbar-nav{
+  margin-right: 10%;
+}
+.logo-name{
+  margin-top: 20px;
+}
+.header-area  .navbar-nav a:hover {
+  color: white;
+  background: darkgoldenrod;
+}
+
+.faq-styles{
+  position: fixed;
+  top: 0px;
+  right: 10px;
+}
