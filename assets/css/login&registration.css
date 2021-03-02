@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: darkgoldenrod;
+.Form{
+    background-color: #0E3A00;
+    
+}
+
+.registration-card{
+    margin-top: 20px;
+}
+
+.erdata-logo > img{
+    width: 600px;
+    height: 500px;
 }
 
 .row{
