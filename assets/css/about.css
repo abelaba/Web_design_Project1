@@ -42,12 +42,33 @@ body {
   margin-top: 20px;
 }
 .header-area  .navbar-nav a:hover {
-  color: white;
-  background: darkgoldenrod;
+  background: burlywood;
 }
 
 .faq-styles{
   position: fixed;
   top: 0px;
   right: 10px;
+}
+
+/* footer*/
+.Facebook{
+  border: solid 1px #395b98 ;
+  border-radius: 2px;
+  background-color:#395b98 ;
+}
+.Twitter{
+  border: solid 1px #1ba5e2;
+  border-radius: 2px;
+  background-color:#1ba5e2 ;
+}
+.Gmail{
+  border: solid 1px red;
+  border-radius: 2px;
+  background-color:red ;
+}
+.center{
+  margin-left: 44%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
