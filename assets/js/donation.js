@@ -49,6 +49,6 @@ function donateCheck(){
         location.href = "./checkout.html"
     }
     else{
-        location.href = "./signup.html";
+        location.href = "./registration.html";
     }
 }
