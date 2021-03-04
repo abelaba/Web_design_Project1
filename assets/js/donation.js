@@ -28,8 +28,14 @@ function donationview() {
             message.innerText = document.message;
             moneycount.innerHTML = `Br.${document.accumulated} raised <sub>out of Br.${document.goal}</sub>`;
             progress.style.width = `${parseInt(document.accumulated)/parseInt(document.goal)*100}%`;
+            sessionStorage.setItem("fundraisersemail",document.email)
+            sessionStorage.setItem("fundraiserstitle",document.title)
+            console.log(document.email,document.title);
 
             console.log(parseInt(document.accumulated)/parseInt(document.goal)*100)
+
+
+
           })
     }
     

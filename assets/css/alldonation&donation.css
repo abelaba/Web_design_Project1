@@ -92,8 +92,8 @@ img{
 }
 
 
-.card-body{                          /* alldonations.html*/
-    
+.card{                          /* alldonations.html*/
+    transition: 1s;
 }
 
 .card-title{                     /* alldonations.html*/
@@ -110,5 +110,20 @@ img{
 
 
 .card:hover{
-    background-color:rgb(238, 235, 235) !important
+    background-color:rgb(238, 235, 235) !important;
+    transition: 1s;
+}
+
+.message{
+    overflow-wrap:break-word;
+}
+
+.message{
+    overflow-wrap:break-word;
+}
+
+
+.location{
+    color:grey;
+    font-size: 20px;
 }

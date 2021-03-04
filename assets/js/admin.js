@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded',showalldonations)
 function showalldonations() {
     search.addEventListener('keyup', filterTasks);
 
-    donationdatabase = new Localbase('donationdatabase');
+    pendingdatabase = new Localbase('pendingdatabase');
     
-    donationdatabase.collection('donationinfo').get({keys:true}).then(info => {
+    pendingdatabase.collection('pending').get({keys:true}).then(info => {
         console.log(info);
-        let output = '';
-        let viewbutton ;
+        
         
         info.forEach(element => {
            
@@ -55,10 +54,10 @@ function showalldonations() {
                         mainbody.appendChild(rowdiv);
 
                         viewButton.onclick = function () {
-                            sessionStorage.setItem("key",element.key);
+                            sessionStorage.setItem("adminviewkey",element.key);
 
                             console.log(JSON.parse(sessionStorage.getItem("data")));
-                            location.href = "./donation.html"
+                            location.href = "./adminview.html"
                             
                             
                         }

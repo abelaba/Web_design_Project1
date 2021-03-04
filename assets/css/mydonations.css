@@ -1,0 +1,4 @@
+.myDonationsContainer{
+    display: flex;
+    flex-wrap:wrap
+}

@@ -28,11 +28,14 @@ acceptButton.addEventListener('click',()=>{
         console.log(key);
         
         transaction.collection('transaction').add({
+            payedDate: String(new Date()),
             payed:donation.value,
             name: inputname.value,
             card:card.value,
             expiry:expiry.value,
             cvv:cvv.value,
+            fundraisersEmail:sessionStorage.getItem("fundraisersemail"),
+            fundraiserTitle:sessionStorage.getItem("fundraiserstitle"),
             email:sessionStorage.getItem("globalEmail")
           })
 
@@ -46,7 +49,7 @@ acceptButton.addEventListener('click',()=>{
           })
 
         
-          console.log(parseInt(data.data.accumulated)+parseInt(donation.value));
+         
 
         
 

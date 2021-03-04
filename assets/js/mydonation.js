@@ -1,16 +1,10 @@
+
 const donationsContainer = document.querySelector(".myDonationsContainer");
 
 const saveChangesButton = document.querySelector(".savechanges");
 
-let donationdatabase;
+const startfundraiserButton = document.querySelector(".startNewFundraiserButton")
 
-let mytitle, goal, message, mylocation,category;
-
-
-const modalBody = document.querySelector(".modal-body");
-const donationsContainer = document.querySelector(".myDonationsContainer");
-
-const saveChangesButton = document.querySelector(".savechanges");
 
 let donationdatabase;
 
@@ -37,6 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 var manage = document.createElement("a");
                 var progress = document.createElement("div");
                 var progressbar = document.createElement("div");
+                var withdrawButton = document.createElement("a");
 
 
                 progress.className = "progress my-2";
@@ -48,6 +43,15 @@ document.addEventListener('DOMContentLoaded',()=>{
                 seconddiv.className = "card-body";
                 title.className = "card-title";
                 title.innerHTML = element.data.title;
+                withdrawButton.className = "withdrawMoney btn btn-success mx-1";
+                withdrawButton.innerText = "Withdraw"
+                withdrawButton.onclick = function () {
+                    sessionStorage.setItem("key",element.key);
+                    location.href = "./withdraw.html"
+
+                    
+                }
+
                 manage.className = "manage btn btn-primary";
                 manage.setAttribute("data-bs-target","#exampleModal")
                 manage.setAttribute("data-bs-toggle","modal")
@@ -56,7 +60,10 @@ document.addEventListener('DOMContentLoaded',()=>{
                     
                     
                     sessionStorage.setItem("key",element.key);
-                    output = `  <div class="container-fluid">
+                    output = `  
+                    
+                    
+                    <div class="container-fluid">
                             
                                     <div class="mb-3">
                                     <label for="title" class="form-label">Title</label>
@@ -67,8 +74,14 @@ document.addEventListener('DOMContentLoaded',()=>{
                                     <input type="text" value="${element.data.goal}" class="form-control" id="goal">
                                     </div>
                                     <div class="mb-3">
-                                    <label for="category" class="form-label">Category</label>
-                                    <input type="text" value="${element.data.category}"class="form-control" id="category">
+                                        <label for="category" class="form-label">Category</label>
+                                        <select class="form-control" name="category" id="category">
+                                        <option value="Medical">Medical</option>
+                                        <option value="Education">Education</option>
+                                        <option value="Memorial">Memorial</option>
+                                        
+                                        </select>
+                                        
                                     </div>
                                     <div class="mb-3">
                                     <label for="location" class="form-label">Location</label>
@@ -103,6 +116,7 @@ document.addEventListener('DOMContentLoaded',()=>{
                 seconddiv.appendChild(title);
                 seconddiv.appendChild(progress);
                 seconddiv.appendChild(manage);
+                seconddiv.appendChild(withdrawButton);
                 
                 progress.appendChild(progressbar);
                 donationsContainer.appendChild(firstdiv);
@@ -122,6 +136,18 @@ document.addEventListener('DOMContentLoaded',()=>{
 
 
 
+
+startfundraiserButton.addEventListener('click',()=>{
+ 
+    console.log("A");
+})
+
+
+
+
+
+
+
 saveChangesButton.onclick = function(){
 
     if(globalEmail == sessionStorage.getItem("globalEmail")){
@@ -135,8 +161,15 @@ saveChangesButton.onclick = function(){
             mylocation: mylocation.value
             
           })
+          
        
     }
+
+    
+}
+
+
+function withdraw() {
 
     
 }

@@ -2,9 +2,23 @@ const loginLink = document.querySelector(".loginNavbarLink");
 const logoutLink = document.querySelector(".logoutNavbarLink");
 const dropdown = document.querySelector(".dropdown")
 
+const dropdown_toggle = document.querySelector(".dropdown-toggle");
+
+
 const user_name = document.querySelector(".user_name");
 
-const startFundmeLink = document.querySelector(".startFundMeNavbarLink") 
+const startFundmeLink = document.querySelector(".startFundMeNavbarLink");
+
+var f_name = sessionStorage.getItem('fname');
+var l_name = sessionStorage.getItem('lname');
+
+
+if(f_name!=null && l_name!=null){
+    dropdown_toggle.innerHTML = `${f_name} ${l_name}`
+
+}
+
+
 
 if( location.href!="./Mydonations.html"){
     //startFundmeLink.style.display = "none";
@@ -17,7 +31,7 @@ startFundmeLink.addEventListener('click',()=>{
     if(sessionStorage.getItem("globalEmail")!=null){
         location.href = "./Mydonations.html"
     }else{
-        location.href = "./signup.html"
+        location.href = "./registration.html"
 
     }
 

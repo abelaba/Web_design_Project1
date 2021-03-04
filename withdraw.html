@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/withdraw.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img width="50" height="50" src="assets/img/erdata.png" alt=""> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav float-right">
+                  <li class="nav-item">
+                    <a class="nav-link startFundMeNavbarLink" href="#">Start a fundraiser</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="alldonations.html">Donations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link loginNavbarLink" href="login.html">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fas fa-user"></i>
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="transaction.html">Transaction</a></li>
+                          <li><a class="dropdown-item" href="#">Options</a></li>
+                          <li><a class="dropdown-item logoutNavbarLink" href="#">LOGOUT</a></li>
+                        </ul>
+                      </div>
+                    
+                  </li>
+    
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div class="container my-5">
+              <div class="row">
+                  <div class="col-md border-end rounded-3">
+                    <h3 class="font-weight-bold display-5 border-bottom">Total raised</h3>
+                    <h2 class="font-weight-bold accumulated"></h2>
+                    
+                    <p class="py-3 info">Setting up withdrawals will not end your campaign. Your campaign will continue to accept donations.</p>
+                
+                  </div>
+                  <div class="col-md">
+                    <h1>Connect your bank account</h1>
+                    <p>Bank information</p>
+                    <form>
+                      <div class="mb-3">
+                          <label for="routingnumber">Routing number</label>
+                          <input class="form-control" placeholder="012345678" type="text" name="routingnumber" id="routingnumber" pattern=[0-9]{8} required>
+                        
+                      </div>
+                      <div class="mb-3">
+                          <label for="accountnumber">Account number</label>
+                          <input class="form-control" placeholder="23456789" type="text" name="accountnumber" id="accountnumber" pattern=[0-9]{8} required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="bankname">Bank name</label>
+                          <input class="form-control" type="text" name="bankname" id="bankname" required>
+                      </div>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Account type</label>
+                          </div>
+                          <select class="custom-select accounttype" id="inputGroupSelect01">
+                         
+                            <option value="Checking">Checking</option>
+                            <option value="Savings">Savings</option>
+                          
+                          </select>
+                        </div>
+                        
+                      <button type="submit" class="btn btn-success withdrawButton">Withdraw</button>
+                    </form>
+                  </div>
+
+                 </div>
+             
+
+          </div>
+        
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+          <script src="ASSETS/JS/localbase.js"></script>
+          <script src="assets/js/withdraw.js"></script>
+          
+    </body>
+</html>
