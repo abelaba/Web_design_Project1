@@ -2,3 +2,23 @@
     display: flex;
     flex-wrap:wrap
 }
+.Twitter{
+    border: solid 1px #1ba5e2;
+    border-radius: 2px;
+    background-color:#1ba5e2 ;
+    width: 6rem;
+}
+.Gmail{
+    border: solid 1px red;
+    border-radius: 2px;
+    background-color:red ;
+    width: 6rem;
+}
+.center{
+    margin-left: 44%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.footer{
+    margin-top: 100%;
+}
